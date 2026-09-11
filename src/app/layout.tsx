@@ -127,6 +127,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: defaultSEO.baseUrl,
   },
+
+  other: {
+    image: defaultSEO.ogImage,
+    "og:image:secure_url": defaultSEO.ogImage,
+  },
 };
 
 export default function RootLayout({
