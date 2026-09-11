@@ -2,8 +2,8 @@ export const defaultSEO = {
   title: "Sohib Khan — Full Stack QA Intern & Automation Specialist",
   description:
     "QA Engineer dedicated to breaking software so users don't have to. Specializing in manual validation, functional testing, Selenium, Playwright, and Postman API testing.",
-  baseUrl: "https://sohib-khan.github.io",
-  metadataBase: new URL("https://sohib-khan.github.io"),
+  baseUrl: "https://sohibkhan.vercel.app",
+  metadataBase: new URL("https://sohibkhan.vercel.app"),
   author: "Sohib Khan",
   siteName: "Sohib Khan Portfolio",
   ogImage: "/logo.png",

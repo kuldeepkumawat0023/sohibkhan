@@ -4,6 +4,8 @@
 
 Modern, high-performance portfolio website built with Next.js 16 (App Router), React 19, Tailwind CSS, Framer Motion, and authentic Claymorphic UI design.
 
+🔗 **Live Website:** [https://sohibkhan.vercel.app](https://sohibkhan.vercel.app)
+
 ## 🌟 Highlights
 - **Full Stack QA Showcase:** Manual Testing, Automation with Selenium & Playwright, Postman API Testing.
 - **Interactive Features:** Live Interactive Test Runner Terminal, Sound Effects, 3D Welcome Animation with Cracker Sparkles, Claymorphic Neumorphic cards.
