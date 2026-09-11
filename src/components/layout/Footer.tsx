@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, MapPin, ShieldCheck } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { profileData } from "@/data/profile";
 
@@ -196,13 +196,8 @@ export function Footer() {
         </div>
 
         {/* ── Bottom Sub-Footer Bar ── */}
-        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-muted-foreground text-center sm:text-left">
-          <span>© 2026 Sohib Khan — Built with care for detail, like every test case.</span>
-
-          <span className="text-primary font-medium inline-flex items-center gap-1.5">
-            <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-            Zero Critical Escapes
-          </span>
+        <div className="pt-6 flex items-center justify-center text-xs font-mono text-muted-foreground text-center">
+          <span>© {new Date().getFullYear()} Sohib Khan — Built with care for detail, like every test case.</span>
         </div>
 
       </div>
