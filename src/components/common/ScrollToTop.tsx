@@ -68,7 +68,7 @@ export function ScrollToTop() {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.6, y: 20 }}
           transition={{ duration: 0.25, ease: "easeOut" }}
-          className="fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-50 flex items-center justify-center group"
+          className="fixed bottom-24 right-6 sm:bottom-28 sm:right-8 z-50 flex items-center justify-center group"
         >
           {/* ── Soft Ambient Glow Halo behind button ── */}
           <div className="absolute w-28 h-28 rounded-full bg-[#2A7569]/20 blur-xl pointer-events-none select-none" />

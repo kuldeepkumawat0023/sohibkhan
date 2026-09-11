@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/provider/ThemeProvider";
 import HydrationGuard from "@/provider/HydrationGuard";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ScrollToTop } from "@/components/common/ScrollToTop";
+import { FloatingActions } from "@/components/common/FloatingActions";
 import { RouteScrollReset } from "@/components/common/RouteScrollReset";
 import { CursorParticles } from "@/components/common/CursorParticles";
 import { WelcomeSplash } from "@/components/common/WelcomeSplash";
@@ -207,7 +207,7 @@ export default function RootLayout({
               {children}
             </div>
             <Footer />
-            <ScrollToTop />
+            <FloatingActions />
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
