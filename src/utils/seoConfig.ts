@@ -6,7 +6,7 @@ export const defaultSEO = {
   metadataBase: new URL("https://sohibkhan.vercel.app"),
   author: "Sohib Khan",
   siteName: "Sohib Khan Portfolio",
-  ogImage: "/logo.png",
+  ogImage: "https://sohibkhan.vercel.app/og-image.jpg",
   ogImageAlt: "SK Sohib Khan — Software Tester & Full Stack QA Specialist",
   twitterCreator: "@SohibKhan",
   keywords: [

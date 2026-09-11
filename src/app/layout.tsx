@@ -106,10 +106,11 @@ export const metadata: Metadata = {
     images: [
       {
         url: defaultSEO.ogImage,
-        width: 1920,
-        height: 1080,
+        secureUrl: defaultSEO.ogImage,
+        width: 1200,
+        height: 630,
         alt: defaultSEO.ogImageAlt,
-        type: "image/png",
+        type: "image/jpeg",
       },
     ],
   },
