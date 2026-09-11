@@ -61,7 +61,7 @@ export function FloatingActions() {
           title="Call (+91 91459 21300)"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.94 }}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-[#2563EB] to-[#60A5FA] text-white shadow-[0_8px_20px_rgba(37,99,235,0.4)] hover:shadow-[0_12px_28px_rgba(37,99,235,0.6)] flex items-center justify-center cursor-pointer border border-white/30 transition-shadow duration-300"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#4D82E8] hover:bg-[#3D72D8] text-white shadow-[0_6px_18px_rgba(77,130,232,0.4)] hover:shadow-[0_10px_24px_rgba(77,130,232,0.6)] flex items-center justify-center cursor-pointer transition-all duration-200"
         >
           <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white drop-shadow-xs" />
         </motion.a>
@@ -82,14 +82,14 @@ export function FloatingActions() {
               transition={{ duration: 0.15 }}
               className="hidden sm:flex items-center gap-2 mr-3 px-3.5 py-1.5 rounded-full bg-[#0B0F14]/90 dark:bg-[#0B0F14]/95 text-white text-xs font-mono border border-white/15 shadow-xl backdrop-blur-md pointer-events-none whitespace-nowrap absolute right-full"
             >
-              <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-[#57CD81] animate-pulse" />
               <span>Chat on WhatsApp</span>
             </motion.div>
           )}
         </AnimatePresence>
 
         {/* Ambient subtle ping ring */}
-        <span className="absolute w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366]/30 animate-ping pointer-events-none opacity-30 duration-1000" />
+        <span className="absolute w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#57CD81]/30 animate-ping pointer-events-none opacity-30 duration-1000" />
 
         <motion.a
           href={WHATSAPP_URL}
@@ -99,13 +99,13 @@ export function FloatingActions() {
           title="Chat on WhatsApp"
           whileHover={{ scale: 1.08 }}
           whileTap={{ scale: 0.94 }}
-          className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-[#128C7E] to-[#25D366] text-white shadow-[0_8px_20px_rgba(37,211,102,0.4)] hover:shadow-[0_12px_28px_rgba(37,211,102,0.6)] flex items-center justify-center cursor-pointer border border-white/30 transition-shadow duration-300"
+          className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#57CD81] hover:bg-[#46BA70] text-white shadow-[0_6px_18px_rgba(87,205,129,0.4)] hover:shadow-[0_10px_24px_rgba(87,205,129,0.6)] flex items-center justify-center cursor-pointer transition-all duration-200"
         >
           <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7 text-white drop-shadow-xs" />
         </motion.a>
       </div>
 
-      {/* ── 3. Scroll To Top Action Button (Deep Blue - Bottom) ── */}
+      {/* ── 3. Scroll To Top Action Button (Vibrant Royal Blue #214EC8 - Bottom) ── */}
       <AnimatePresence>
         {showScrollTop && (
           <motion.div
@@ -138,9 +138,9 @@ export function FloatingActions() {
               title="Scroll to Top"
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.94 }}
-              className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-tr from-[#1E40AF] to-[#2563EB] text-white shadow-[0_8px_20px_rgba(30,64,175,0.4)] hover:shadow-[0_12px_28px_rgba(30,64,175,0.6)] flex items-center justify-center cursor-pointer border border-white/30 transition-shadow duration-300"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#214EC8] hover:bg-[#1A42B0] text-white shadow-[0_6px_18px_rgba(33,78,200,0.45)] hover:shadow-[0_10px_24px_rgba(33,78,200,0.65)] flex items-center justify-center cursor-pointer transition-all duration-200"
             >
-              <ArrowUp className="w-5 h-5 sm:w-6 sm:h-6 text-white stroke-[2.5]" />
+              <ArrowUp className="w-5 h-5 sm:w-6 sm:h-6 text-white stroke-[2.8]" />
             </motion.button>
           </motion.div>
         )}
