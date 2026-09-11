@@ -1,0 +1,53 @@
+{
+  "name": "Sohib Khan — Full Stack QA Intern & Automation Specialist",
+  "short_name": "Sohib Khan QA",
+  "description": "QA Engineer dedicated to breaking software so users don't have to. Specializing in manual validation, functional testing, Selenium, Playwright, and Postman API testing.",
+  "start_url": "/",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0B0F14",
+  "theme_color": "#48A293",
+  "orientation": "portrait-primary",
+  "categories": ["portfolio", "technology", "productivity"],
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/logo.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Sohib Khan — Full Stack QA & Automation Specialist Portfolio"
+    },
+    {
+      "src": "/og-image.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "SK Sohib Khan — Software Tester"
+    }
+  ]
+}
