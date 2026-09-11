@@ -29,6 +29,7 @@ export const skillsData: SkillGroup[] = [
     title: "Languages & Web",
     skills: [
       { name: "Core Java", iconId: "cup" },
+      { name: "JavaScript", iconId: "js" },
       { name: "HTML5", iconId: "html" },
       { name: "CSS3", iconId: "css" },
       { name: "C (Basic)", iconId: "braces" },
@@ -37,6 +38,9 @@ export const skillsData: SkillGroup[] = [
   {
     category: "database",
     title: "Database",
-    skills: [{ name: "MySQL", iconId: "db" }],
+    skills: [
+      { name: "MySQL", iconId: "db" },
+      { name: "MongoDB", iconId: "mongodb" },
+    ],
   },
 ];

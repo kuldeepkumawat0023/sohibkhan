@@ -329,20 +329,98 @@ export function APITestingLogo({ className = "w-6 h-6" }: LogoProps) {
   );
 }
 
+// 17. Official MongoDB Logo (Green Leaf with dark base)
+export function MongoDBLogo({ className = "w-6 h-6" }: LogoProps) {
+  return (
+    <svg viewBox="0 0 128 128" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#001E2B" />
+      {/* Outer Leaf shape */}
+      <path
+        d="M64 18C64 18 41 46 41 73C41 90 53 102 64 110C75 102 87 90 87 73C87 46 64 18 64 18Z"
+        fill="#13AA52"
+      />
+      {/* Left bright leaf facet */}
+      <path
+        d="M64 18C64 18 61 42 61 73C61 89 55 99 64 110C75 102 87 90 87 73C87 46 64 18 64 18Z"
+        fill="#00ED64"
+        opacity="0.92"
+      />
+      {/* Center vein */}
+      <path
+        d="M64 22V108"
+        stroke="#001E2B"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+// 18. Official JavaScript Logo (Classic JS Badge)
+export function JavaScriptLogo({ className = "w-6 h-6" }: LogoProps) {
+  return (
+    <svg viewBox="0 0 128 128" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#F7DF1E" />
+      <text
+        x="64"
+        y="84"
+        textAnchor="middle"
+        fill="#000000"
+        fontFamily="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+        fontWeight="800"
+        fontSize="52"
+        letterSpacing="-1.5px"
+      >
+        JS
+      </text>
+    </svg>
+  );
+}
+
+// 19. Official TypeScript Logo (Classic TS Badge)
+export function TypeScriptLogo({ className = "w-6 h-6" }: LogoProps) {
+  return (
+    <svg viewBox="0 0 128 128" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#3178C6" />
+      <text
+        x="64"
+        y="84"
+        textAnchor="middle"
+        fill="#FFFFFF"
+        fontFamily="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+        fontWeight="800"
+        fontSize="52"
+        letterSpacing="-1.5px"
+      >
+        TS
+      </text>
+    </svg>
+  );
+}
+
 export function BrandLogo({ name, className = "w-6 h-6" }: { name: string; className?: string }) {
   switch (name) {
     case "Selenium WebDriver":
       return <SeleniumLogo className={className} />;
     case "Playwright":
+    case "Playwright (TS/JS)":
       return <PlaywrightLogo className={className} />;
     case "Postman":
       return <PostmanLogo className={className} />;
     case "Core Java":
       return <JavaLogo className={className} />;
+    case "JavaScript":
+    case "JS":
+      return <JavaScriptLogo className={className} />;
+    case "TypeScript":
+    case "TS":
+      return <TypeScriptLogo className={className} />;
     case "Git & GitHub":
       return <GitLogo className={className} />;
     case "MySQL":
       return <MySQLLogo className={className} />;
+    case "MongoDB":
+      return <MongoDBLogo className={className} />;
     case "IntelliJ IDEA":
       return <IntelliJLogo className={className} />;
     case "VS Code":

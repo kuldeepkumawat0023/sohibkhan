@@ -138,7 +138,7 @@ export function FloatingActions() {
         </motion.a>
       </div>
 
-      {/* ── 3. Scroll To Top Action Button (Royal Blue #214EC8 with Confetti Particles - Bottom) ── */}
+      {/* ── 3. Scroll To Top Action Button (Theme Color Spruce #2A7569 with Confetti Particles - Bottom) ── */}
       <AnimatePresence>
         {showScrollTop && (
           <motion.div
@@ -147,11 +147,9 @@ export function FloatingActions() {
             exit={{ opacity: 0, scale: 0.5, y: 15 }}
             transition={{ duration: 0.2 }}
             className="relative flex items-center justify-center"
-            onMouseEnter={() => setHoveredButton("scroll")}
-            onMouseLeave={() => setHoveredButton(null)}
           >
-            {/* Soft Ambient Glow Halo behind button */}
-            <div className="absolute w-24 h-24 rounded-full bg-[#214EC8]/25 blur-xl pointer-events-none select-none" />
+            {/* Soft Ambient Glow Halo behind button (Theme Color) */}
+            <div className="absolute w-24 h-24 rounded-full bg-[#2A7569]/25 blur-xl pointer-events-none select-none" />
 
             {/* Surrounding Burst of Colorful Confetti Particles */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
@@ -178,22 +176,8 @@ export function FloatingActions() {
               ))}
             </div>
 
-            {/* Tooltip on hover */}
-            <AnimatePresence>
-              {hoveredButton === "scroll" && (
-                <motion.div
-                  initial={{ opacity: 0, x: 10, scale: 0.9 }}
-                  animate={{ opacity: 1, x: 0, scale: 1 }}
-                  exit={{ opacity: 0, x: 10, scale: 0.9 }}
-                  transition={{ duration: 0.15 }}
-                  className="hidden sm:flex items-center gap-2 mr-3 px-3.5 py-1.5 rounded-full bg-[#0B0F14]/90 dark:bg-[#0B0F14]/95 text-white text-xs font-mono border border-white/15 shadow-xl backdrop-blur-md pointer-events-none whitespace-nowrap absolute right-full"
-                >
-                  <span>Scroll to Top</span>
-                </motion.div>
-              )}
-            </AnimatePresence>
 
-            {/* Royal Blue Button */}
+            {/* Theme Color Spruce Button (#2A7569) */}
             <motion.button
               type="button"
               onClick={scrollToTop}
@@ -201,7 +185,7 @@ export function FloatingActions() {
               title="Scroll to Top"
               whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.94 }}
-              className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#214EC8] hover:bg-[#1A42B0] text-white shadow-[0_6px_18px_rgba(33,78,200,0.45)] hover:shadow-[0_10px_24px_rgba(33,78,200,0.65)] flex items-center justify-center cursor-pointer transition-all duration-200 border border-white/25"
+              className="relative z-10 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#2A7569] hover:bg-[#22665B] text-white shadow-[0_8px_24px_rgba(42,117,105,0.45)] hover:shadow-[0_12px_30px_rgba(42,117,105,0.65)] flex items-center justify-center cursor-pointer transition-all duration-200 border border-white/25"
             >
               <ArrowUp className="w-5 h-5 sm:w-6 sm:h-6 text-white stroke-[2.8]" />
             </motion.button>
